@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>占い結果</title>
+<link th:href="@{/css/omikuji.css}" rel="stylesheet" type="text/css">
+</head>
+
+	<h1>結果が出ました！</h1>
+	
+<body>
+	<form th:action="@{/omikuji/welcome}" th:object="${omikujiEntity}" method="post">
+	
+		
+		
+		<div class="resultmain">
+		
+			<p class="Result-Message1">
+				<span th:text="*{name}"></span>さんの　<span th:text="*{date}"></span>の運勢は・・・</p>
+			
+			<p class="Result-Message2">
+				<span th:text="*{result}"></span></p>
+			
+
+			<p><input type="submit" class="Back-Btn" value="もう一度ひく" /></p>
+		
+		</div>
+	
+	</form>
+
+</body>
+</html>

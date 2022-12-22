@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+h1{
+	border: dashed 2px white;
+	padding: 0.2em 0.5em;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+body {
+	margin-top: 80ox;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+	font-weight: bold;
+  	font-size: 18px;
+  	text-align: center;
+  	font-family: sans-serif;
+}

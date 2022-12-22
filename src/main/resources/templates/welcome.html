@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>受付画面</title>
+<link th:href="@{/css/welcome.css}" rel="stylesheet" type="text/css">
+</head>
+
+	<h1>ようこそ</h1>
+	
+<body>
+	<form th:action="@{/omikuji/omikuji}" th:object="${omikujiEntity}" method="post">
+	
+		
+		
+		<div class="welcomemain">
+		
+			<p class="Ask-Name">お名前を教えてください</p>
+			<p><input type="text" class="name-Input" th:field="*{name}" /></p>
+			
+			
+			<p><input type="submit" class="Start-Btn" value="おみくじをひく" /></p>
+		
+		</div>
+	
+	</form>
+
+</body>
+</html>
